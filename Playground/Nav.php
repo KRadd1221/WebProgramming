@@ -3,24 +3,24 @@
   <div class="container">
   	<div class="navbar-header">
   		<div class="container">
-  	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-    	  <span class="sr-only">Toggle navigation</span>
-      	<span class="icon-bar"></span>
-      	<span class="icon-bar"></span>
-      	<span class="icon-bar"></span>
-    	</button>
-    	<a class="navbar-brand" href="index.php">Playground!</a>
+  	  		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+    	  	<span class="sr-only">Toggle navigation</span>
+      		<span class="icon-bar"></span>
+      		<span class="icon-bar"></span>
+      		<span class="icon-bar"></span>
+    		</button>
+    		<a class="navbar-brand" href="index.php">Playground!</a>
+  		</div>
   	</div>
-  </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse navbar-ex1-collapse">
-  	<p class="navbar-text pull-right">Signed in as <a href="" class="navbar-link">Kevin Radcliffe</a></p>
-    <ul class="nav navbar-nav">
-      <li class="Home"><a href="index.php">Home</a></li>
-      <li class="Contact"><a href="Contact.php">Contact</a></li>
-      <li class="Links"><a href="Links.php">Links</a></li>
-      <li class="dropdown">
+  	<div class="collapse navbar-collapse navbar-ex1-collapse">
+  		<p class="navbar-text pull-right">Signed in as <a href="" class="navbar-link">Kevin Radcliffe</a></p>
+    	<ul class="nav navbar-nav">
+      	<li class="Home"><a href="index.php">Home</a></li>
+      	<li class="Contact"><a href="Contact.php">Contact</a></li>
+      	<li class="Links"><a href="Links.php">Links</a></li>
+      	<li class="dropdown">
         <a href="" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="#">Action</a></li>

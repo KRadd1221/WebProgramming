@@ -19,23 +19,23 @@
   	<? 
   	include 'Nav.php';
 	 ?>
-	 <div class= "container">
-      	<div class="well well-lg">
-      		<h1>Hello world!</h1>
+	<div class= "container">
+ 	 	<div class="well well-lg">
+ 	  		<h1>Hello world!</h1>
 			<p>Welcome class of 2013 to Web Server Programming <a class="btn btn-default">Learn more</a></p></p>
       	</div>
       	<div class="col-lg-7 col-lg-offset-2"> 
 			<h2> Contact Us</h2>
 			</br>
-    	<div class="input-group">
-  			<span class="input-group-addon">Email:</span>
-  			<input type="text" class="form-control" placeholder="E-Mail">
-		</div>
+    		<div class="input-group">
+  				<span class="input-group-addon">Email:</span>
+  				<input type="text" class="form-control" placeholder="E-Mail">
+			</div>
 			</br>
 			
 		
-			<div class="input-group">
-  				<span class="input-group-addon">Message</span>
+			<div class="input-group"> 
+			<span class="input-group-addon">Message</span>
   				<input type="text" class="form-control" placeholder="Message">
 			</div>
 			</br>
@@ -43,10 +43,10 @@
 				
 				      <input type="submit" class="btn" value="Submit" />
 			   
-			  </div>  			
+			</div>  			
 
-	 	</div>
-	 </div>
+	 	 </div>
+	  </div>
  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//code.jquery.com/jquery.js"></script>
