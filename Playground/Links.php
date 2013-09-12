@@ -17,7 +17,7 @@
   </head>
   <body>
   	<? 
-  	include 'Nav.php';
+  	include '_Nav.php';
 	 ?>
     <div class= "container">
       	<div class="well well-lg">

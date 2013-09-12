@@ -17,13 +17,14 @@
   </head>
   <body>
   	<? 
-  	include 'Nav.php';
+  	include '_Nav.php';
 	 ?>
 	<div class= "container">
  	 	<div class="well well-lg">
  	  		<h1>Hello world!</h1>
 			<p>Welcome class of 2013 to Web Server Programming <a class="btn btn-default">Learn more</a></p></p>
       	</div>
+      	<div class="row">
       	<div class="col-lg-7 col-lg-offset-2"> 
 			<h2> Contact Us</h2>
 			</br>
@@ -47,7 +48,7 @@
 
 	 	 </div>
 	  </div>
- 
+ </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="//code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
