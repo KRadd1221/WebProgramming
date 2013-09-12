@@ -53,5 +53,19 @@
 	          <h4 class="media-heading">Check This Out</h4>
 	          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
 	        </div>
+	       </div>
+	      </div>
 
 	</div>
+	
+	 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="//code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+       <script type="text/javascript"> 
+    	$(function(){
+    		$(".Links").addClass("active");
+    	})
+    </script>
+</body>
+</html>

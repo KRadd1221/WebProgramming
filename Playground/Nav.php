@@ -1,6 +1,6 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
-  
+  <div class="container">
   	<div class="navbar-header">
   		<div class="container">
   	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -15,13 +15,13 @@
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
-  	<p class="navbar-text pull-right">Signed in as <a href="#" class="navbar-link">Kevin Radcliffe</a></p>
+  	<p class="navbar-text pull-right">Signed in as <a href="" class="navbar-link">Kevin Radcliffe</a></p>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="Contact.php">Contact</a></li>
-      <li><a href="Links.php">Links</a></li>
+      <li class="Home"><a href="index.php">Home</a></li>
+      <li class="Contact"><a href="Contact.php">Contact</a></li>
+      <li class="Links"><a href="Links.php">Links</a></li>
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="#">Action</a></li>
           <li><a href="#">Another action</a></li>
@@ -32,6 +32,6 @@
       </li>
     </ul>
     
-        
+     </div>   
   </div><!-- /.navbar-collapse -->
 </nav>

@@ -57,5 +57,11 @@
     <script src="//code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript"> 
+    	$(function(){
+    		$(".Home").addClass("active");
+    	})
+    </script>
+
   </body>
 </html>
