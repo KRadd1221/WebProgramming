@@ -4,4 +4,6 @@ tmp/*
 app/tmp/*
 app/[Cc]onfig/core.php
 app/[Cc]onfig/database.php
-!empty
+!emptyFinal/inc/_password.php
+Final/inc/_password.php
+Final/inc/_password.php
