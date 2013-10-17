@@ -2,12 +2,12 @@
 <link_href="cdnjs.cloudflare.com/ajax/libs/datatables/1.9.4/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet"/>
 
 <div class= "container">
-	<h2>Keywords</h2>
+	<h2>Suppliers</h2>
 	<table class="table table-hover table-bordered table-striped"> 
 		<thead>
 		<tr>
-			<th>ID</th>
-			<th>Name</th>
+			<th>Supplier Name</th>
+			<th>Product</th>
 			
 			<th></th>
 		</tr>
@@ -15,8 +15,8 @@
 		<tbody>
 		<? foreach ($model as $rs): ?>
 			<tr>
-				<td><?=$rs['Parent_id']?></td> 
-				<td><?=$rs['Name']?></td>
+				<td><?=$rs['Name']?></td> 
+				<td><?=$rs['Products_id']?></td>
 				
 				<td>
 					
