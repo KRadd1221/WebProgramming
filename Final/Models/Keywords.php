@@ -4,19 +4,15 @@
  * 
  */
 class Keywords {
-	
-	static function Get()
-	{
-		$ret= array();
-		$conn = GetConnection();
-		$result = $conn->query('SELECT * FROM Keywords');
-
-		while($rs = $result->fetch_assoc()) {
-			$ret[] =$rs;
-			
-		}
-		
-		$conn-> close();
-		return $ret; 
-	}
+        
+        static public function Get($id=null)
+        {
+                if(isset($id)){
+                        return fetch_one("SELECT * FROM Keywords WHERE id=$id");                        
+                }else{
+                        return fetch_all('SELECT * FROM Keywords');                       
+                }
+        }
+        
+        
 }

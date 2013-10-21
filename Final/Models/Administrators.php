@@ -3,20 +3,16 @@
 /**
  * 
  */
-class Keywords {
-	
-	static function Get()
-	{
-		$ret= array();
-		$conn = GetConnection();
-		$result = $conn->query('SELECT * FROM Administrators');
-
-		while($rs = $result->fetch_assoc()) {
-			$ret[] =$rs;
-			
-		}
-		
-		$conn-> close();
-		return $ret; 
-	}
+class Administrators {
+        
+        static public function Get($id=null)
+        {
+                if(isset($id)){
+                        return fetch_one("SELECT * FROM Administrators WHERE id=$id");                        
+                }else{
+                        return fetch_all('SELECT * FROM Administrators');                       
+                }
+        }
+        
+        
 }

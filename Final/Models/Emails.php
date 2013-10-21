@@ -3,20 +3,16 @@
 /**
  * 
  */
-class Keywords {
-	
-	static function Get()
-	{
-		$ret= array();
-		$conn = GetConnection();
-		$result = $conn->query('SELECT * FROM Emails');
-
-		while($rs = $result->fetch_assoc()) {
-			$ret[] =$rs;
-			
-		}
-		
-		$conn-> close();
-		return $ret; 
-	}
+class Emails {
+        
+        static public function Get($id=null)
+        {
+                if(isset($id)){
+                        return fetch_one("SELECT * FROM Emails WHERE id=$id");                        
+                }else{
+                        return fetch_all('SELECT * FROM Emails');                       
+                }
+        }
+        
+        
 }
