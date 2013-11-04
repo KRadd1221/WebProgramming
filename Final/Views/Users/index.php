@@ -7,12 +7,14 @@ include_once '../../inc/_global.php';
 switch ($action) {
         case 'details':
                 $model  = Users::Get($_REQUEST['id']);
-                $view         = 'details.php';                
+                $view         = 'details.php';
+                $title        = "Details for: $model[FirstName] $model[LastName]"        ;        
                 break;
                 
         case 'new':
                 $model = Users::Blank();
                 $view         = 'edit.php';                
+                $title        = "Create New User"        ;        
                 break;
         
         case 'save':
@@ -26,34 +28,41 @@ switch ($action) {
                 }                        
                         $model = $_REQUEST;
                         $view = 'edit.php';
+                        $title        = "Edit: $model[FirstName] $model[LastName]"        ;        
                 break;
                 
         case 'edit':
                 $model  = Users::Get($_REQUEST['id']);
                 $view         = 'edit.php';                
+                $title        = "Edit: $model[FirstName] $model[LastName]"        ;        
                 break;
                 
         case 'delete':
+                if(isset($_POST['id'])){
+                        $errors = Users::Delete($_REQUEST['id']);                        
+                        if(!$errors){
+                                header("Location: ?");
+                                die();
+                        }                                                        
+                }
                 $model  = Users::Get($_REQUEST['id']);
-                $view         = 'details.php';                
+                $view         = 'delete.php';                                        
+                $title        = "Edit: $model[FirstName] $model[LastName]"        ;        
                 break;
         
         default:
                 $model  = Users::Get();
-                $view         = 'list.php';                
+                $view         = 'list.php';
+                $title        = 'Users';                
                 break;
 }
 
 switch ($format) {
-        case 'min':
-                include $view;
-                break;
         case 'dialog':
-                include '../Shared/_Dialog.php';
+                include '../Shared/_DialogLayout.php';                                
                 break;
         
         default:
-                include '../Shared/_Layout.php';
-                
+                include '../Shared/_Layout.php';                
                 break;
 }
