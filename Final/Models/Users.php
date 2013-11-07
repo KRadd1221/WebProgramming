@@ -8,12 +8,18 @@ class Users {
         static public function Get($id=null)
         {
                 if(isset($id)){
-                		$sql=  "SELECT *
-                				FROM Users
-                				WHERE id=$id";
+                        $sql = "        SELECT U.*, K.Name as UserType_Name
+                                                FROM 2013Fall_Users U
+                                                        Join 2013Fall_Keywords K ON U.`UserType`=K.id
+                                                WHERE U.id=$id
+                                        ";
                         return fetch_one($sql);                        
                 }else{
-                        return fetch_all('SELECT * FROM Users');                        
+                        $sql = "        SELECT U.*, K.Name as UserType_Name
+                                                FROM 2013Fall_Users U
+                                                        Join 2013Fall_Keywords K ON U.`UserType`=K.id
+                                        ";
+                        return fetch_all($sql);                        
                 }
         }
         
@@ -27,11 +33,11 @@ class Users {
                 $conn = GetConnection();
                 $row2 = Users::Encode($row, $conn);
                 if($row['id']){
-                        $sql =        " UPDATE Users "
+                        $sql =        " UPDATE 2013Fall_Users "
                                 .        " Set FirstName='$row2[FirstName]', LastName='$row2[LastName]', Password='$row2[Password]', UserType='$row2[UserType]' "
                                 .        " WHERE id=$row2[id] ";
                 }else{
-                        $sql =         " Insert Into Users (FirstName, LastName, Password, UserType) "
+                        $sql =         " Insert Into 2013Fall_Users (FirstName, LastName, Password, UserType) "
                                 .        " Values ('$row2[FirstName]', '$row2[LastName]', '$row2[Password]', '$row2[UserType]') ";                        
                 }
                 
@@ -50,7 +56,7 @@ class Users {
         static public function Delete($id)
         {
                 $conn = GetConnection();
-                $sql =        " DELETE From Users WHERE id=$id ";
+                $sql =        " DELETE From 2013Fall_Users WHERE id=$id ";
                                 
                 $conn->query($sql);
                 //echo $sql; 

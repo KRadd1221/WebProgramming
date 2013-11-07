@@ -5,13 +5,13 @@
  */
 class Keywords {
         
-        static public function Get($id=null)
+        static public function Get()
         {
-                if(isset($id)){
-                        return fetch_one("SELECT * FROM Keywords WHERE id=$id");                        
-                }else{
-                        return fetch_all('SELECT * FROM Keywords');                       
-                }
+                return fetch_all('SELECT * FROM 2013Fall_Keywords');
+        }
+        static public function GetSelectListFor($id)
+        {
+                return fetch_all("SELECT id, Name FROM Keywords WHERE `Parent_id`=$id ");
         }
         
         
