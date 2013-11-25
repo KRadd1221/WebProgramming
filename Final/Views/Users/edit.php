@@ -10,17 +10,6 @@
         <form action="?action=save" method="post"  class="form-horizontal row">
                 <input type="hidden" name="id" value="<?=$model['id']?>" />
                 
-                
-                   <div class="form-group <?=isset($errors['id']) ? 'has-error' : ''?>">
-                        <label for="id" class="col-sm-2 control-label">id</label>
-                        <div class="col-sm-10">
-                                <input type="text" name="id" id="id" placeholder="ID" class="form-control " value="<?=$model['id']?>"  />
-                        </div>
-                        <span><?=@$errors['id']?></span>
-                </div>
-                
-                
-                
                 <div class="form-group <?=isset($errors['FirstName']) ? 'has-error' : ''?>">
                         <label for="FirstName" class="col-sm-2 control-label">First Name</label>
                         <div class="col-sm-10">
@@ -69,4 +58,3 @@
                 $("#UserType").val(<?=$model['UserType']?>);
         })        
 </script>
-
