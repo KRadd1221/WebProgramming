@@ -7,7 +7,7 @@ class Keywords {
         
         static public function Get()
         {
-                return fetch_all('SELECT * FROM 2013Fall_Keywords');
+                return fetch_all('SELECT * FROM Keywords');
         }
         static public function GetSelectListFor($id)
         {

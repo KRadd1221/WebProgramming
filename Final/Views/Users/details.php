@@ -5,7 +5,7 @@
           <dt>Last Name</dt>
           <dd><?=$model['LastName']?></dd>
           <dt>created_at</dt>
-          <dd><?=$model['created_at']?></dd>
+          <dd><?=$model['updated_at']?></dd>
           <dt>Password</dt>
           <dd><?=$model['Password']?></dd>
           <dt>UserType</dt>

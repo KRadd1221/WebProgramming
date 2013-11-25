@@ -15,7 +15,7 @@
 		<tbody>
 		<? foreach ($model as $rs): ?>
 			<tr>
-				<td><?=$rs['Parent_id']?></td> 
+				<td><?=$rs['id']?></td> 
 				<td><?=$rs['Name']?></td>
 				
 				<td>
