@@ -1,35 +1,40 @@
+<link href="//cdnjs.cloudflare.com/ajax/libs/datatables/1.9.4/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet" />
 
-<link_href="cdnjs.cloudflare.com/ajax/libs/datatables/1.9.4/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet"/>
+<div class="container">
+        
+        <h2>Orders</h2>
+        
+        <a href="?action=new">Add Order</a>
 
-<div class= "container">
-	<h2>Orders</h2>
-	<table class="table table-hover table-bordered table-striped"> 
-		<thead>
-		<tr>
-			<th>Order Number</th>
-			<th>User</th>
-			
-			<th></th>
-		</tr>
-		</thead>
-		<tbody>
-		<? foreach ($model as $rs): ?>
-			<tr>
-				<td><?=$rs['OrderNumber']?></td> 
-				<td><?=$rs['Users_id']?></td>
-				
-				<td>
-					
-				</td>
-			</tr>
-		<? endforeach ?>
-		</tbody>
-		
-	</table>
+        <table class="table table-hover table-bordered table-striped">
+                <thead>
+                <tr>
+                        <th>ID</th>
+                        <th>Value</th>
+                        <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <? foreach ($model as $rs): ?>
+                        <tr>
+                                <td><?=$rs['id']?></td> 
+                                <td><?=$rs['Value']?></td>
+                                <td>
+                                        <a class="glyphicon glyphicon-file" href="?action=details&id=<?=$rs['id']?>&format=dialog" data-toggle="modal" data-target="#myModal"></a>
+                                        <a class="glyphicon glyphicon-pencil" href="?action=edit&id=<?=$rs['id']?>&format=dialog" data-toggle="modal" data-target="#myModal"></a>
+                                        <a class="glyphicon glyphicon-trash" href="?action=delete&id=<?=$rs['id']?>&format=dialog" data-toggle="modal" data-target="#myModal"></a>
+                                </td>
+                        </tr>
+                <? endforeach ?>
+                </tbody>
+        </table>
 </div>
+
+<div id="myModal" class="modal slide"></div>
+
 <? function Scripts(){ ?>
-	<script src="cdjns.cloudflare.com/ajax/libs/datatables/1.9.4/jquery.dataTables.min.js"></script>
-	<script type="text/javascript">
-		$(".table").dataTable();
-	</script>
-<?} ?>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/datatables/1.9.4/jquery.dataTables.min.js"></script>
+        <script type="text/javascript">
+                $(".table").dataTable();
+        </script>
+<? } ?>

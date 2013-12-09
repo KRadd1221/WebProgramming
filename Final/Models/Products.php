@@ -16,11 +16,21 @@ class Products {
                 ";
                 return fetch_all($sql);
         }
+       
+
         static public function GetCategories()
         {
-                $sql = " SELECT * FROM Product_Categories ";
-                return fetch_all($sql);
+                        $sql = "        SELECT *
+                                                FROM Product_Categories
+                                        ";
+                        return fetch_all($sql);                        
         }
         
-        
+        static public function GetByCategory($id=null)
+        {
+                        $sql = "        SELECT *
+                                                FROM Products WHERE Product_Category_id=$id
+                                        ";
+                        return fetch_all($sql);                        
+        }
 }

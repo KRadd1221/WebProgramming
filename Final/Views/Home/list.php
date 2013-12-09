@@ -25,7 +25,7 @@
         <table class="table table-hover table-bordered table-striped">
                 <thead>
                 <tr>
-                        <th>First Name</th>
+                        <th></th>
                         <th>Last Name</th>
                         <th>Type</th>
                         <th></th>

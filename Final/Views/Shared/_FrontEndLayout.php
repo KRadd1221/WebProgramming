@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Kevin</title>
+    <titleKevin?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
     <style type="text/css">
@@ -15,7 +15,7 @@
                   </div>
           </header>
           
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-default" role="navigation">
                    <div class="container">
                            <div class="navbar-header">
                                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".nav-c">
@@ -23,26 +23,24 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                              <a class="navbar-brand" href="#">Kevin</a>
+                              <a class="navbar-brand" href="#">Playground</a>
                         </div>
                 
                         <div class="collapse navbar-collapse nav-c">
                     <ul class="nav navbar-nav">
                                                 
-                                                
                                         <li class="dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Databases <b class="caret"></b></a>
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                                         <ul class="dropdown-menu">
-                                          <li><a href="http://cs.newpaltz.edu/~n02704859/2013/Final/Views/Users/">Users</a></li>
-                                          <li><a href="http://cs.newpaltz.edu/~n02704859/2013/Final/Views/Keywords/">Keywords</a></li>
-                                          <li><a href="http://cs.newpaltz.edu/~n02704859/2013/Final/Views/Inventory/">Inventory</a></li>
-                                          <li><a href="http://cs.newpaltz.edu/~n02704859/2013/Final/Views/Product_Categories/">Product Categories</a></li>
-                                          <li><a href="http://cs.newpaltz.edu/~n02704859/2013/Final/Views/Users/">Feedback</a></li>
-                                          <li><a href="http://cs.newpaltz.edu/~n02704859/2013/Final/Views/Orders/">Orders</a></li>
+                                          <li><a href="">Kevin Costner</a></li>
+                                          <li><a href="">Kevin Smith</a></li>
+                                          <li><a href="">Kevin James</a></li>
+                                          <li><a href="">Kevin Spacey</a></li>
+                                          <li><a href="">Kevin Bacon</a></li>
                                         </ul>
                                       </li>
                               </ul>
-                                <p class="navbar-text pull-right">Signed in as <a href="#" class="navbar-link">Moshe Plotkin</a></p>
+                                <p class="navbar-text pull-right" id="shopping-cart"><a href="#" class="navbar-link">Cart</a></p>
                         </div>
                 </div>
         </div>

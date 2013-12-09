@@ -35,7 +35,7 @@
                         <label for="UserType" class="col-sm-2 control-label">User Type</label>
                         <div class="col-sm-10">
                                 <select name="UserType" id="UserType" class="form-control ">
-                                        <? foreach (Keywords::GetSelectListFor(2) as $keywordRs): ?>
+                                        <? foreach (Keywords::GetSelectListFor(1) as $keywordRs): ?>
                                                 <option value="<?=$keywordRs['id']?>"><?=$keywordRs['Name']?></option>
                                         <? endforeach; ?>
                                 </select>
@@ -58,3 +58,6 @@
                 $("#UserType").val(<?=$model['UserType']?>);
         })        
 </script>
+
+
+

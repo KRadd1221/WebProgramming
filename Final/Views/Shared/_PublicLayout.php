@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Website - <?=@$title?></title>
+    <title>Kevin - <?=@$title?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
     <style type="text/css" media="screen">
@@ -17,19 +17,19 @@
   <body>
           <header>
                   <div class="container">
-                          <h1>Menorahs Unlimited</h1>
+                          <h1>Kevin</h1>
                   </div>
           </header>
           
    <div class="container">
-            <div class="navbar navbar-default" role="navigation">
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation">
                            <div class="navbar-header">
                                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".nav-c">
                                     <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                              <a class="navbar-brand" href="#">Home</a>
+                              <a class="navbar-brand" href="#">Kevin</a>
                         </div>
                 
                         <div class="collapse navbar-collapse nav-c">
@@ -37,10 +37,14 @@
                                         <li class="dropdown">
                                                 <a href="#" class="dropdown-toggle compact" data-toggle="dropdown">
                                                         <small>Shop by<br /></small>
-                                                        Department <b class="caret"></b>
+                                                        Kevin <b class="caret"></b>
                                                 </a>
                                         <ul class="dropdown-menu">
-                                          <li><a href="#">Action</a></li>
+                                          <li><a href="">Kevin Costner</a></li>
+                                          <li><a href="">Kevin Smith</a></li>
+                                          <li><a href="">Kevin James</a></li>
+                                          <li><a href="">Kevin Spacey</a></li>
+                                          <li><a href="">Kevin Bacon</a></li>
                                         </ul>
                                         </li>
                                                 <form class="navbar-form navbar-left" role="search">
@@ -53,7 +57,7 @@
                                             </form>
                                         <li class="dropdown">
                                                 <a href="#" class="dropdown-toggle compact" data-toggle="dropdown">
-                                                        <small>Moshe Plotkin<br /></small>
+                                                        <small>UserName<br /></small>
                                                         Your Account <b class="caret"></b>
                                                 </a>
                                         <ul class="dropdown-menu">
