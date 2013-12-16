@@ -1,26 +1,27 @@
+
 <div class="container">
                 
                 <div>
-                	
-            			
+                        
+                                    
                         <ul class="nav nav-tabs" class = "active" data-bind="foreach: categories" >
                                 <li><a href="#" data-bind="text: Name, click: $root.categoryClicked" >Cat 1</a> </li>
                         </ul>
-                		
-                	</div>
+                                
+                        </div>
                 </div>
                 
                 <div data-bind="foreach: products" >
                         <div class="col-sm-3">
                                 <div class="well">
-                                		<img alt="item image" data-bind="attr: {src: Picture}" height = "270" width = "180" allign = "middle">
+                                                <img alt="item image" data-bind="attr: {src: Picture}" height = "270" width = "180" allign = "middle">
                                         <h2 data-bind="text: Name" ></h2>
                                         <p data-bind= "text: Description"></p>
                                         <ul class="nav nav-pills">
-  											<li class="active"><a data-bind="attr: { href: '?action=addToCart&id=' + id} " >Add To Cart</a></li>
-  											</ul>
-  											<h4 data-bind="text: Price"></h4>
-  											
+                                        	<li class="active"><a data-bind="attr: { href: '?action=addToCart&id=' + id} " >Add To Cart</a></li>
+                                        </ul>
+                                        <h4 data-bind="text: Price"></h4>
+                                                                                          
                                         
                                 </div>
                         </div>
@@ -28,7 +29,7 @@
                 
                 
                 
-        </div>
+        
 
 
         <script type="text/html" id="shopping-cart-template">
@@ -67,3 +68,4 @@
          });
          </script>
  <? } ?>
+ 
