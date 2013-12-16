@@ -1,6 +1,6 @@
 <?php
 include_once '../../inc/_global.php';
-session_start();
+
 
 @$action = $_REQUEST['action'];
 @$format = $_REQUEST['format'];
@@ -10,8 +10,6 @@ switch ($action) {
         
         case 'categories':
                 $model = Inventory::GetCategories();
-				$view         = 'list.php';
-                
                 break;
                 
         case 'products':
@@ -46,6 +44,6 @@ switch ($format) {
                 break;
         
         default:
-                include '../Shared/_PublicLayout.php';                
+                include '../Shared/_FrontEndLayout.php';                
                 break;
 }

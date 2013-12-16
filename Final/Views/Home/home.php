@@ -3,7 +3,7 @@
                 <div>
                 	
             			
-                        <ul class="nav nav-tabs" data-bind="foreach: categories" >
+                        <ul class="nav nav-tabs" class = "active" data-bind="foreach: categories" >
                                 <li><a href="#" data-bind="text: Name, click: $root.categoryClicked" >Cat 1</a> </li>
                         </ul>
                 		
@@ -13,7 +13,7 @@
                 <div data-bind="foreach: products" >
                         <div class="col-sm-3">
                                 <div class="well">
-                                		<img alt="item image" data-bind="attr: {src: Picture}" />
+                                		<img alt="item image" data-bind="attr: {src: Picture}" height = "270" width = "180" allign = "middle">
                                         <h2 data-bind="text: Name" ></h2>
                                         <p data-bind= "text: Description"></p>
                                         <ul class="nav nav-pills">
@@ -34,7 +34,8 @@
         <script type="text/html" id="shopping-cart-template">
                 <span class="glyphicon glyphicon-shopping-cart"></span>
                 <a href="#">Cart</a>
-                <span class="badge"> <? $cart = $_SESSION['cart']; echo count($cart); ?> </span>
+                <!-- <? $cart = $_SESSION['cart'];?> -->
+                <span class="badge"> <? echo count($cart); ?> </span>
         </script>
         
         

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <titleKevin?></title>
+    <title>Kevin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
     <style type="text/css">
@@ -11,19 +11,20 @@
   <body>
           <header>
                   <div class="container">
-                          <h1>Kevin</h1>
+                          
                   </div>
           </header>
           
-    <div class="navbar navbar-default" role="navigation">
+    <div class="navbar navbar-fixed-top navbar-default" role="navigation">
                    <div class="container">
                            <div class="navbar-header">
+                           	
                                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".nav-c">
                                     <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                              <a class="navbar-brand" href="#">Playground</a>
+                              <a class="navbar-brand" href="#">Kevin</a>
                         </div>
                 
                         <div class="collapse navbar-collapse nav-c">
@@ -40,6 +41,7 @@
                                         </ul>
                                       </li>
                               </ul>
+                              <p class="navbar-text pull-right"><a href="#" class="navbar-link ="Sign in"</a></p>
                                 <p class="navbar-text pull-right" id="shopping-cart"><a href="#" class="navbar-link">Cart</a></p>
                         </div>
                 </div>

@@ -18,7 +18,8 @@ include_once __DIR__ . '/../Models/Products.php';
 include_once __DIR__ . '/../Models/Suggested_Products.php';
 include_once __DIR__ . '/../Models/Suppliers.php';
 include_once __DIR__ . '/../Models/Wishlists.php';
-
+include_once __DIR__ . '/../Models/Auth.php';
+session_start();
 function GetConnection()
 {
         global $sql_password;
