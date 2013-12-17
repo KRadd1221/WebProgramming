@@ -1,16 +1,12 @@
 <?php
+include_once __DIR__ . '/../inc/_global.php';
 
-class Cities {
-        
-        static public function Get($id=null)
-        {
-                if(isset($id)){
-                        return fetch_one("SELECT * FROM US_Zip_Codes WHERE id=$id");                        
-                }else{
-                        return fetch_all('SELECT * FROM  US_Zip_Codes');                       
+
+
+        {	header('Content-Type: application/json');
+                
+                        echo json_encode (array( fetch_all('SELECT city FROM  US_Zip_Codes')));                      
                 }
-        }
         
         
-}
-
+        
