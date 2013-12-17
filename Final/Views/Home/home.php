@@ -1,4 +1,3 @@
-
 <div class="container">
                 
                 <div>
@@ -18,9 +17,9 @@
                                         <h2 data-bind="text: Name" ></h2>
                                         <p data-bind= "text: Description"></p>
                                         <ul class="nav nav-pills">
-                                        	<li class="active"><a data-bind="attr: { href: '?action=addToCart&id=' + id} " >Add To Cart</a></li>
-                                        </ul>
-                                        <h4 data-bind="text: Price"></h4>
+                                                                                          <li class="active"><a data-bind="attr: { href: '?action=addToCart&id=' + id} " >Add To Cart</a></li>
+                                                                                          </ul>
+                                                                                          <h4 data-bind="text: Price"></h4>
                                                                                           
                                         
                                 </div>
@@ -29,7 +28,7 @@
                 
                 
                 
-        
+        </div>
 
 
         <script type="text/html" id="shopping-cart-template">
@@ -68,4 +67,3 @@
          });
          </script>
  <? } ?>
- 
